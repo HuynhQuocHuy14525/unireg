@@ -1,0 +1,21 @@
+{
+  "name": "unireg",
+  "version": "1.0.0",
+  "description": "UniReg - ung dung mau demo kiem thu giao dien va chuc nang (DT06)",
+  "main": "index.js",
+  "scripts": {
+    "v1": "node server.js 1",
+    "v2": "node server.js 2",
+    "test": "playwright test",
+    "report": "playwright show-report results/html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.56.0",
+    "express": "^4.22.3",
+    "lighthouse": "^13.5.0"
+  }
+}

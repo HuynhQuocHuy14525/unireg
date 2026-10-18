@@ -1,0 +1,102 @@
+{
+ "v1.0": {
+  "index.html": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 6,
+    "help": "Elements must meet minimum color contrast ratio thresholds"
+   },
+   {
+    "id": "html-has-lang",
+    "impact": "serious",
+    "nodes": 1,
+    "help": "<html> element must have a lang attribute"
+   },
+   {
+    "id": "image-alt",
+    "impact": "critical",
+    "nodes": 1,
+    "help": "Images must have alternative text"
+   }
+  ],
+  "courses.html": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 23,
+    "help": "Elements must meet minimum color contrast ratio thresholds"
+   },
+   {
+    "id": "html-has-lang",
+    "impact": "serious",
+    "nodes": 1,
+    "help": "<html> element must have a lang attribute"
+   },
+   {
+    "id": "image-alt",
+    "impact": "critical",
+    "nodes": 1,
+    "help": "Images must have alternative text"
+   },
+   {
+    "id": "select-name",
+    "impact": "critical",
+    "nodes": 1,
+    "help": "Select element must have an accessible name"
+   }
+  ],
+  "my.html": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 14,
+    "help": "Elements must meet minimum color contrast ratio thresholds"
+   },
+   {
+    "id": "html-has-lang",
+    "impact": "serious",
+    "nodes": 1,
+    "help": "<html> element must have a lang attribute"
+   },
+   {
+    "id": "image-alt",
+    "impact": "critical",
+    "nodes": 1,
+    "help": "Images must have alternative text"
+   }
+  ],
+  "profile.html": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 10,
+    "help": "Elements must meet minimum color contrast ratio thresholds"
+   },
+   {
+    "id": "html-has-lang",
+    "impact": "serious",
+    "nodes": 1,
+    "help": "<html> element must have a lang attribute"
+   },
+   {
+    "id": "image-alt",
+    "impact": "critical",
+    "nodes": 1,
+    "help": "Images must have alternative text"
+   },
+   {
+    "id": "label",
+    "impact": "critical",
+    "nodes": 1,
+    "help": "Form elements must have labels"
+   }
+  ]
+ },
+ "v1.1": {
+  "index.html": [],
+  "courses.html": [],
+  "my.html": [],
+  "profile.html": []
+ }
+}

@@ -1,0 +1,3362 @@
+{
+  "config": {
+    "configFile": "/home/claude/unireg/playwright.config.js",
+    "rootDir": "/home/claude/unireg/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results/results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "results/html",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/claude/unireg/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "v1.0",
+        "name": "v1.0",
+        "testDir": "/home/claude/unireg/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/claude/unireg/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "v1.1",
+        "name": "v1.1",
+        "testDir": "/home/claude/unireg/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "unireg.spec.js",
+      "file": "unireg.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FAST",
+          "file": "unireg.spec.js",
+          "line": 33,
+          "column": 6,
+          "specs": [
+            {
+              "title": "FAST-01 Trang đăng nhập có đủ control, mật khẩu được che",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 237,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:11.629Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-0d4e7397a5f0d66f54b7",
+              "file": "unireg.spec.js",
+              "line": 34,
+              "column": 3
+            },
+            {
+              "title": "FAST-02 Focus ban đầu đặt tại ô MSSV",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5168,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#mssv')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#mssv')\u001b[22m\n\u001b[2m    9 × locator resolved to <input id=\"mssv\" name=\"mssv\" placeholder=\"MSSV\"/>\u001b[22m\n\u001b[2m      - unexpected value \"inactive\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#mssv')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#mssv')\u001b[22m\n\u001b[2m    9 × locator resolved to <input id=\"mssv\" name=\"mssv\" placeholder=\"MSSV\"/>\u001b[22m\n\u001b[2m      - unexpected value \"inactive\"\u001b[22m\n\n    at /home/claude/unireg/tests/unireg.spec.js:42:41",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 41,
+                          "line": 42
+                        },
+                        "snippet": "  40 |   test('FAST-02 Focus ban đầu đặt tại ô MSSV', async ({ page }) => {\n  41 |     await page.goto('/index.html');\n> 42 |     await expect(page.locator('#mssv')).toBeFocused();\n     |                                         ^\n  43 |   });\n  44 |   test('FAST-03 Menu điều hướng đánh dấu trang hiện tại', async ({ page }) => {\n  45 |     await login(page);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 41,
+                            "line": 42
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#mssv')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#mssv')\u001b[22m\n\u001b[2m    9 × locator resolved to <input id=\"mssv\" name=\"mssv\" placeholder=\"MSSV\"/>\u001b[22m\n\u001b[2m      - unexpected value \"inactive\"\u001b[22m\n\n\n  40 |   test('FAST-02 Focus ban đầu đặt tại ô MSSV', async ({ page }) => {\n  41 |     await page.goto('/index.html');\n> 42 |     await expect(page.locator('#mssv')).toBeFocused();\n     |                                         ^\n  43 |   });\n  44 |   test('FAST-03 Menu điều hướng đánh dấu trang hiện tại', async ({ page }) => {\n  45 |     await login(page);\n    at /home/claude/unireg/tests/unireg.spec.js:42:41"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:11.966Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-FAST-FAST-02-Focus-ban-đầu-đặt-tại-ô-MSSV-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-FAST-FAST-02-Focus-ban-đầu-đặt-tại-ô-MSSV-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 41,
+                        "line": 42
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-f543e6d8c91f9ad8a166",
+              "file": "unireg.spec.js",
+              "line": 40,
+              "column": 3
+            },
+            {
+              "title": "FAST-03 Menu điều hướng đánh dấu trang hiện tại",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 416,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:18.073Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-6219dd78b8598a638158",
+              "file": "unireg.spec.js",
+              "line": 44,
+              "column": 3
+            },
+            {
+              "title": "FAST-04 Không có liên kết hỏng (broken link)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 496,
+                      "error": {
+                        "message": "Error: Liên kết hỏng: huong-dan.html (404)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"huong-dan.html (404)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: Liên kết hỏng: huong-dan.html (404)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"huong-dan.html (404)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /home/claude/unireg/tests/unireg.spec.js:54:59",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 59,
+                          "line": 54
+                        },
+                        "snippet": "  52 |     const broken = [];\n  53 |     for (const h of [...new Set(hrefs)]) { const r = await page.request.get('/' + h); if (r.status() !== 200) broken.push(`${h} (${r.status()})`); }\n> 54 |     expect(broken, 'Liên kết hỏng: ' + broken.join(', ')).toEqual([]);\n     |                                                           ^\n  55 |   });\n  56 |   test('FAST-05 Tìm kiếm theo từ khóa \"kiểm thử\"', async ({ page }) => {\n  57 |     await login(page);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 59,
+                            "line": 54
+                          },
+                          "message": "Error: Liên kết hỏng: huong-dan.html (404)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"huong-dan.html (404)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  52 |     const broken = [];\n  53 |     for (const h of [...new Set(hrefs)]) { const r = await page.request.get('/' + h); if (r.status() !== 200) broken.push(`${h} (${r.status()})`); }\n> 54 |     expect(broken, 'Liên kết hỏng: ' + broken.join(', ')).toEqual([]);\n     |                                                           ^\n  55 |   });\n  56 |   test('FAST-05 Tìm kiếm theo từ khóa \"kiểm thử\"', async ({ page }) => {\n  57 |     await login(page);\n    at /home/claude/unireg/tests/unireg.spec.js:54:59"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:18.596Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-FAST-FAST-04-Không-có-liên-kết-hỏng-broken-link--v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-FAST-FAST-04-Không-có-liên-kết-hỏng-broken-link--v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 59,
+                        "line": 54
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-9e329273b413a2cd7eb3",
+              "file": "unireg.spec.js",
+              "line": 49,
+              "column": 3
+            },
+            {
+              "title": "FAST-05 Tìm kiếm theo từ khóa \"kiểm thử\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 876,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:19.926Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-c145d2e9156fc83c22d0",
+              "file": "unireg.spec.js",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "FAST-06 Lọc theo khoa Kỹ thuật phần mềm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 810,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:20.904Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-2ed5c10b13701f0cb2d9",
+              "file": "unireg.spec.js",
+              "line": 64,
+              "column": 3
+            },
+            {
+              "title": "FAST-07 Mọi hình ảnh đều có thuộc tính alt",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 378,
+                      "error": {
+                        "message": "Error: Ảnh thiếu alt: logo.svg\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"logo.svg\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: Ảnh thiếu alt: logo.svg\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"logo.svg\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /home/claude/unireg/tests/unireg.spec.js:74:61",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 61,
+                          "line": 74
+                        },
+                        "snippet": "  72 |     await login(page);\n  73 |     const missing = await page.$$eval('img', (imgs) => imgs.filter((i) => !i.hasAttribute('alt')).map((i) => i.getAttribute('src')));\n> 74 |     expect(missing, 'Ảnh thiếu alt: ' + missing.join(', ')).toEqual([]);\n     |                                                             ^\n  75 |   });\n  76 |   test('FAST-08 Tên nút lệnh nhất quán, cùng ngôn ngữ (tiếng Việt)', async ({ page }) => {\n  77 |     const ENGLISH = /^(Submit|Save|Search|Login|Profile|Hi)\\b/;"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 61,
+                            "line": 74
+                          },
+                          "message": "Error: Ảnh thiếu alt: logo.svg\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"logo.svg\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  72 |     await login(page);\n  73 |     const missing = await page.$$eval('img', (imgs) => imgs.filter((i) => !i.hasAttribute('alt')).map((i) => i.getAttribute('src')));\n> 74 |     expect(missing, 'Ảnh thiếu alt: ' + missing.join(', ')).toEqual([]);\n     |                                                             ^\n  75 |   });\n  76 |   test('FAST-08 Tên nút lệnh nhất quán, cùng ngôn ngữ (tiếng Việt)', async ({ page }) => {\n  77 |     const ENGLISH = /^(Submit|Save|Search|Login|Profile|Hi)\\b/;\n    at /home/claude/unireg/tests/unireg.spec.js:74:61"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:21.733Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-FAST-FAST-07-Mọi-hình-ảnh-đều-có-thuộc-tính-alt-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-FAST-FAST-07-Mọi-hình-ảnh-đều-có-thuộc-tính-alt-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 61,
+                        "line": 74
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-97f261baf1c576cf6cbc",
+              "file": "unireg.spec.js",
+              "line": 71,
+              "column": 3
+            },
+            {
+              "title": "FAST-08 Tên nút lệnh nhất quán, cùng ngôn ngữ (tiếng Việt)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1196,
+                      "error": {
+                        "message": "Error: Nhãn tiếng Anh lẫn trong giao diện\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 7\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Login\",\u001b[39m\n\u001b[31m+   \"Profile\",\u001b[39m\n\u001b[31m+   \"Search\",\u001b[39m\n\u001b[31m+   \"Submit\",\u001b[39m\n\u001b[31m+   \"Save\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: Nhãn tiếng Anh lẫn trong giao diện\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 7\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Login\",\u001b[39m\n\u001b[31m+   \"Profile\",\u001b[39m\n\u001b[31m+   \"Search\",\u001b[39m\n\u001b[31m+   \"Submit\",\u001b[39m\n\u001b[31m+   \"Save\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /home/claude/unireg/tests/unireg.spec.js:86:71",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 71,
+                          "line": 86
+                        },
+                        "snippet": "  84 |       found.push(...(await labels()).filter((t) => ENGLISH.test(t)));\n  85 |     }\n> 86 |     expect([...new Set(found)], 'Nhãn tiếng Anh lẫn trong giao diện').toEqual([]);\n     |                                                                       ^\n  87 |   });\n  88 | });\n  89 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 71,
+                            "line": 86
+                          },
+                          "message": "Error: Nhãn tiếng Anh lẫn trong giao diện\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 7\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Login\",\u001b[39m\n\u001b[31m+   \"Profile\",\u001b[39m\n\u001b[31m+   \"Search\",\u001b[39m\n\u001b[31m+   \"Submit\",\u001b[39m\n\u001b[31m+   \"Save\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  84 |       found.push(...(await labels()).filter((t) => ENGLISH.test(t)));\n  85 |     }\n> 86 |     expect([...new Set(found)], 'Nhãn tiếng Anh lẫn trong giao diện').toEqual([]);\n     |                                                                       ^\n  87 |   });\n  88 | });\n  89 |\n    at /home/claude/unireg/tests/unireg.spec.js:86:71"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:23.041Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-FAST-FAST-08-Tên-nú-93296-n-cùng-ngôn-ngữ-tiếng-Việt--v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-FAST-FAST-08-Tên-nú-93296-n-cùng-ngôn-ngữ-tiếng-Việt--v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 71,
+                        "line": 86
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-8e6c8af2d768fffb00d9",
+              "file": "unireg.spec.js",
+              "line": 76,
+              "column": 3
+            },
+            {
+              "title": "FAST-01 Trang đăng nhập có đủ control, mật khẩu được che",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 285,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:03.784Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-60cf91b9b55d4a8134af",
+              "file": "unireg.spec.js",
+              "line": 34,
+              "column": 3
+            },
+            {
+              "title": "FAST-02 Focus ban đầu đặt tại ô MSSV",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 183,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:04.197Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-4eb191df06a5061e44be",
+              "file": "unireg.spec.js",
+              "line": 40,
+              "column": 3
+            },
+            {
+              "title": "FAST-03 Menu điều hướng đánh dấu trang hiện tại",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 395,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:04.403Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-69c9a1795b58ca6aa179",
+              "file": "unireg.spec.js",
+              "line": 44,
+              "column": 3
+            },
+            {
+              "title": "FAST-04 Không có liên kết hỏng (broken link)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 424,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:04.819Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-2950b628a3184c8394ae",
+              "file": "unireg.spec.js",
+              "line": 49,
+              "column": 3
+            },
+            {
+              "title": "FAST-05 Tìm kiếm theo từ khóa \"kiểm thử\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 865,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:05.263Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-eda4b42d11696c4c84e6",
+              "file": "unireg.spec.js",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "FAST-06 Lọc theo khoa Kỹ thuật phần mềm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 855,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:06.152Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-7cf1eae21babdfc4edcf",
+              "file": "unireg.spec.js",
+              "line": 64,
+              "column": 3
+            },
+            {
+              "title": "FAST-07 Mọi hình ảnh đều có thuộc tính alt",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 379,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:07.020Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-c7f1dcaf8ca5e1780d04",
+              "file": "unireg.spec.js",
+              "line": 71,
+              "column": 3
+            },
+            {
+              "title": "FAST-08 Tên nút lệnh nhất quán, cùng ngôn ngữ (tiếng Việt)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1093,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:07.415Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-2639eba5d524e009f213",
+              "file": "unireg.spec.js",
+              "line": 76,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "TOFT",
+          "file": "unireg.spec.js",
+          "line": 91,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TOFT-01 Đăng nhập hợp lệ và hiển thị tên sinh viên",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 478,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:25.220Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-57b90804c1cf5c2202fe",
+              "file": "unireg.spec.js",
+              "line": 92,
+              "column": 3
+            },
+            {
+              "title": "TOFT-02 Đăng ký SE301: dữ liệu và tổng tín chỉ cập nhật đúng (15 → 18)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1428,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:25.858Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-f603b748da69c6e4e413",
+              "file": "unireg.spec.js",
+              "line": 96,
+              "column": 3
+            },
+            {
+              "title": "TOFT-03 Có thông báo phản hồi sau khi đăng ký thành công",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6393,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected substring: \u001b[32m\"thành công\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert\"></div>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected substring: \u001b[32m\"thành công\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert\"></div>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n\n    at /home/claude/unireg/tests/unireg.spec.js:106:40",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 40,
+                          "line": 106
+                        },
+                        "snippet": "  104 |     await login(page);\n  105 |     await register(page, 'SE301');\n> 106 |     await expect(page.locator('#msg')).toContainText('thành công');\n      |                                        ^\n  107 |   });\n  108 |   test('TOFT-04 Hủy đăng ký có hộp thoại xác nhận; chọn \"Không\" thì giữ nguyên', async ({ page }) => {\n  109 |     await login(page);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 40,
+                            "line": 106
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected substring: \u001b[32m\"thành công\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert\"></div>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n\n\n  104 |     await login(page);\n  105 |     await register(page, 'SE301');\n> 106 |     await expect(page.locator('#msg')).toContainText('thành công');\n      |                                        ^\n  107 |   });\n  108 |   test('TOFT-04 Hủy đăng ký có hộp thoại xác nhận; chọn \"Không\" thì giữ nguyên', async ({ page }) => {\n  109 |     await login(page);\n    at /home/claude/unireg/tests/unireg.spec.js:106:40"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:27.319Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-TOFT-TOFT-03-Có-thô-5abde--sau-khi-đăng-ký-thành-công-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-TOFT-TOFT-03-Có-thô-5abde--sau-khi-đăng-ký-thành-công-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 40,
+                        "line": 106
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-769f06535ef2f1a10831",
+              "file": "unireg.spec.js",
+              "line": 103,
+              "column": 3
+            },
+            {
+              "title": "TOFT-04 Hủy đăng ký có hộp thoại xác nhận; chọn \"Không\" thì giữ nguyên",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 983,
+                      "error": {
+                        "message": "Error: Không có bước xác nhận trước thao tác hủy\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: Không có bước xác nhận trước thao tác hủy\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/claude/unireg/tests/unireg.spec.js:118:68",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 68,
+                          "line": 118
+                        },
+                        "snippet": "  116 |     if (hasDialog) await page.click('#no');\n  117 |     const d = await registrations(page);\n> 118 |     expect(hasDialog, 'Không có bước xác nhận trước thao tác hủy').toBe(true);\n      |                                                                    ^\n  119 |     expect(d.items.map((x) => x.id)).toContain('PE001');\n  120 |   });\n  121 |   test('TOFT-05 Hủy đăng ký PE001: tổng tín chỉ giảm đúng (15 → 13)', async ({ page }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 68,
+                            "line": 118
+                          },
+                          "message": "Error: Không có bước xác nhận trước thao tác hủy\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  116 |     if (hasDialog) await page.click('#no');\n  117 |     const d = await registrations(page);\n> 118 |     expect(hasDialog, 'Không có bước xác nhận trước thao tác hủy').toBe(true);\n      |                                                                    ^\n  119 |     expect(d.items.map((x) => x.id)).toContain('PE001');\n  120 |   });\n  121 |   test('TOFT-05 Hủy đăng ký PE001: tổng tín chỉ giảm đúng (15 → 13)', async ({ page }) => {\n    at /home/claude/unireg/tests/unireg.spec.js:118:68"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:34.570Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-TOFT-TOFT-04-Hủy-đă-30350-n-chọn-Không-thì-giữ-nguyên-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-TOFT-TOFT-04-Hủy-đă-30350-n-chọn-Không-thì-giữ-nguyên-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 68,
+                        "line": 118
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-acd143332736d7662f29",
+              "file": "unireg.spec.js",
+              "line": 108,
+              "column": 3
+            },
+            {
+              "title": "TOFT-05 Hủy đăng ký PE001: tổng tín chỉ giảm đúng (15 → 13)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1082,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:36.494Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-16d745c2e55303bc077b",
+              "file": "unireg.spec.js",
+              "line": 121,
+              "column": 3
+            },
+            {
+              "title": "TOFT-06 Cập nhật thông tin cá nhân hợp lệ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 843,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:37.681Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-79ec53ac0be6f23e75bd",
+              "file": "unireg.spec.js",
+              "line": 130,
+              "column": 3
+            },
+            {
+              "title": "TOFT-01 Đăng nhập hợp lệ và hiển thị tên sinh viên",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 365,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:08.521Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-855bf3b0d52862315d71",
+              "file": "unireg.spec.js",
+              "line": 92,
+              "column": 3
+            },
+            {
+              "title": "TOFT-02 Đăng ký SE301: dữ liệu và tổng tín chỉ cập nhật đúng (15 → 18)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1417,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:08.899Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-bf46e58331e1d2764f46",
+              "file": "unireg.spec.js",
+              "line": 96,
+              "column": 3
+            },
+            {
+              "title": "TOFT-03 Có thông báo phản hồi sau khi đăng ký thành công",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1407,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:10.329Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-aab4d1db8b3e4154dfe0",
+              "file": "unireg.spec.js",
+              "line": 103,
+              "column": 3
+            },
+            {
+              "title": "TOFT-04 Hủy đăng ký có hộp thoại xác nhận; chọn \"Không\" thì giữ nguyên",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 844,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:11.750Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-fb280b11a423cbbe2144",
+              "file": "unireg.spec.js",
+              "line": 108,
+              "column": 3
+            },
+            {
+              "title": "TOFT-05 Hủy đăng ký PE001: tổng tín chỉ giảm đúng (15 → 13)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 997,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:12.607Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-7655c00c947daa416256",
+              "file": "unireg.spec.js",
+              "line": 121,
+              "column": 3
+            },
+            {
+              "title": "TOFT-06 Cập nhật thông tin cá nhân hợp lệ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 904,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:13.620Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-0bf2686c79666fb39382",
+              "file": "unireg.spec.js",
+              "line": 130,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "FET",
+          "file": "unireg.spec.js",
+          "line": 141,
+          "column": 6,
+          "specs": [
+            {
+              "title": "FET-01 Đăng nhập để trống: thông báo dễ hiểu",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5243,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected pattern: not \u001b[32m/TypeError|SQLSTATE|0x[0-9a-f]+|undefined|Exception/i\u001b[39m\nReceived string: \u001b[31m\"\u001b[7mTypeError\u001b[27m: Cannot read properties of undefined (reading 'trim')\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert err\">TypeError: Cannot read properties of undefined (r…</div>\u001b[22m\n\u001b[2m      - unexpected value \"TypeError: Cannot read properties of undefined (reading 'trim')\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected pattern: not \u001b[32m/TypeError|SQLSTATE|0x[0-9a-f]+|undefined|Exception/i\u001b[39m\nReceived string: \u001b[31m\"\u001b[7mTypeError\u001b[27m: Cannot read properties of undefined (reading 'trim')\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert err\">TypeError: Cannot read properties of undefined (r…</div>\u001b[22m\n\u001b[2m      - unexpected value \"TypeError: Cannot read properties of undefined (reading 'trim')\"\u001b[22m\n\n    at /home/claude/unireg/tests/unireg.spec.js:146:44",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 44,
+                          "line": 146
+                        },
+                        "snippet": "  144 |     await page.click('#loginForm button[type=submit]');\n  145 |     await expect(page.locator('#msg')).not.toBeEmpty();\n> 146 |     await expect(page.locator('#msg')).not.toHaveText(TECH);\n      |                                            ^\n  147 |     await expect(page.locator('#msg')).toContainText('Vui lòng nhập');\n  148 |   });\n  149 |   test('FET-02 Sai mật khẩu: không lộ mã lỗi kỹ thuật', async ({ page }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 44,
+                            "line": 146
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected pattern: not \u001b[32m/TypeError|SQLSTATE|0x[0-9a-f]+|undefined|Exception/i\u001b[39m\nReceived string: \u001b[31m\"\u001b[7mTypeError\u001b[27m: Cannot read properties of undefined (reading 'trim')\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert err\">TypeError: Cannot read properties of undefined (r…</div>\u001b[22m\n\u001b[2m      - unexpected value \"TypeError: Cannot read properties of undefined (reading 'trim')\"\u001b[22m\n\n\n  144 |     await page.click('#loginForm button[type=submit]');\n  145 |     await expect(page.locator('#msg')).not.toBeEmpty();\n> 146 |     await expect(page.locator('#msg')).not.toHaveText(TECH);\n      |                                            ^\n  147 |     await expect(page.locator('#msg')).toContainText('Vui lòng nhập');\n  148 |   });\n  149 |   test('FET-02 Sai mật khẩu: không lộ mã lỗi kỹ thuật', async ({ page }) => {\n    at /home/claude/unireg/tests/unireg.spec.js:146:44"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:38.546Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-01-Đăng-nhập-để-trống-thông-báo-dễ-hiểu-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-01-Đăng-nhập-để-trống-thông-báo-dễ-hiểu-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 44,
+                        "line": 146
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-1628876593b99f801ed2",
+              "file": "unireg.spec.js",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "FET-02 Sai mật khẩu: không lộ mã lỗi kỹ thuật",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5367,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected pattern: not \u001b[32m/TypeError|SQLSTATE|0x[0-9a-f]+|undefined|Exception/i\u001b[39m\nReceived string: \u001b[31m\"Login failed (code \u001b[7m0x80004005\u001b[27m)\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert err\">Login failed (code 0x80004005)</div>\u001b[22m\n\u001b[2m      - unexpected value \"Login failed (code 0x80004005)\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected pattern: not \u001b[32m/TypeError|SQLSTATE|0x[0-9a-f]+|undefined|Exception/i\u001b[39m\nReceived string: \u001b[31m\"Login failed (code \u001b[7m0x80004005\u001b[27m)\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert err\">Login failed (code 0x80004005)</div>\u001b[22m\n\u001b[2m      - unexpected value \"Login failed (code 0x80004005)\"\u001b[22m\n\n    at /home/claude/unireg/tests/unireg.spec.js:154:44",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 44,
+                          "line": 154
+                        },
+                        "snippet": "  152 |     await page.click('#loginForm button[type=submit]');\n  153 |     await expect(page.locator('#msg')).not.toBeEmpty();\n> 154 |     await expect(page.locator('#msg')).not.toHaveText(TECH);\n      |                                            ^\n  155 |   });\n  156 |   test('FET-03 MSSV 7 chữ số (biên dưới - 1): báo lỗi định dạng', async ({ page }) => {\n  157 |     await page.goto('/index.html');"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 44,
+                            "line": 154
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected pattern: not \u001b[32m/TypeError|SQLSTATE|0x[0-9a-f]+|undefined|Exception/i\u001b[39m\nReceived string: \u001b[31m\"Login failed (code \u001b[7m0x80004005\u001b[27m)\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert err\">Login failed (code 0x80004005)</div>\u001b[22m\n\u001b[2m      - unexpected value \"Login failed (code 0x80004005)\"\u001b[22m\n\n\n  152 |     await page.click('#loginForm button[type=submit]');\n  153 |     await expect(page.locator('#msg')).not.toBeEmpty();\n> 154 |     await expect(page.locator('#msg')).not.toHaveText(TECH);\n      |                                            ^\n  155 |   });\n  156 |   test('FET-03 MSSV 7 chữ số (biên dưới - 1): báo lỗi định dạng', async ({ page }) => {\n  157 |     await page.goto('/index.html');\n    at /home/claude/unireg/tests/unireg.spec.js:154:44"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:44.718Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-02-Sai-mật-khẩu-không-lộ-mã-lỗi-kỹ-thuật-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-02-Sai-mật-khẩu-không-lộ-mã-lỗi-kỹ-thuật-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 44,
+                        "line": 154
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-52d3f3eb60de1057d4e6",
+              "file": "unireg.spec.js",
+              "line": 149,
+              "column": 3
+            },
+            {
+              "title": "FET-03 MSSV 7 chữ số (biên dưới - 1): báo lỗi định dạng",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5384,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected substring: \u001b[32m\"8 chữ số\"\u001b[39m\nReceived string:    \u001b[31m\"Login failed (code 0x80004005)\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert err\">Login failed (code 0x80004005)</div>\u001b[22m\n\u001b[2m      - unexpected value \"Login failed (code 0x80004005)\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected substring: \u001b[32m\"8 chữ số\"\u001b[39m\nReceived string:    \u001b[31m\"Login failed (code 0x80004005)\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert err\">Login failed (code 0x80004005)</div>\u001b[22m\n\u001b[2m      - unexpected value \"Login failed (code 0x80004005)\"\u001b[22m\n\n    at /home/claude/unireg/tests/unireg.spec.js:160:40",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 40,
+                          "line": 160
+                        },
+                        "snippet": "  158 |     await page.fill('#mssv', '2365846'); await page.fill('#password', '23658461');\n  159 |     await page.click('#loginForm button[type=submit]');\n> 160 |     await expect(page.locator('#msg')).toContainText('8 chữ số');\n      |                                        ^\n  161 |   });\n  162 |   test('FET-04 Đăng ký lớp đã đầy (EN101): thông báo dễ hiểu', async ({ page }) => {\n  163 |     await login(page);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 40,
+                            "line": 160
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected substring: \u001b[32m\"8 chữ số\"\u001b[39m\nReceived string:    \u001b[31m\"Login failed (code 0x80004005)\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert err\">Login failed (code 0x80004005)</div>\u001b[22m\n\u001b[2m      - unexpected value \"Login failed (code 0x80004005)\"\u001b[22m\n\n\n  158 |     await page.fill('#mssv', '2365846'); await page.fill('#password', '23658461');\n  159 |     await page.click('#loginForm button[type=submit]');\n> 160 |     await expect(page.locator('#msg')).toContainText('8 chữ số');\n      |                                        ^\n  161 |   });\n  162 |   test('FET-04 Đăng ký lớp đã đầy (EN101): thông báo dễ hiểu', async ({ page }) => {\n  163 |     await login(page);\n    at /home/claude/unireg/tests/unireg.spec.js:160:40"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:51.024Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-03-MSSV-7-c-4ad2d--dưới---1-báo-lỗi-định-dạng-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-03-MSSV-7-c-4ad2d--dưới---1-báo-lỗi-định-dạng-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 40,
+                        "line": 160
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-45b6142ec48c0a5a38d6",
+              "file": "unireg.spec.js",
+              "line": 156,
+              "column": 3
+            },
+            {
+              "title": "FET-04 Đăng ký lớp đã đầy (EN101): thông báo dễ hiểu",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6491,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected substring: \u001b[32m\"đủ sĩ số\"\u001b[39m\nReceived string:    \u001b[31m\"SQLSTATE[45000]: slot_exceeded (course_id=EN101)\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert err\">SQLSTATE[45000]: slot_exceeded (course_id=EN101)</div>\u001b[22m\n\u001b[2m      - unexpected value \"SQLSTATE[45000]: slot_exceeded (course_id=EN101)\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected substring: \u001b[32m\"đủ sĩ số\"\u001b[39m\nReceived string:    \u001b[31m\"SQLSTATE[45000]: slot_exceeded (course_id=EN101)\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert err\">SQLSTATE[45000]: slot_exceeded (course_id=EN101)</div>\u001b[22m\n\u001b[2m      - unexpected value \"SQLSTATE[45000]: slot_exceeded (course_id=EN101)\"\u001b[22m\n\n    at /home/claude/unireg/tests/unireg.spec.js:165:40",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 40,
+                          "line": 165
+                        },
+                        "snippet": "  163 |     await login(page);\n  164 |     await register(page, 'EN101');\n> 165 |     await expect(page.locator('#msg')).toContainText('đủ sĩ số');\n      |                                        ^\n  166 |     await expect(page.locator('#msg')).not.toHaveText(TECH);\n  167 |   });\n  168 |   test('FET-05 Đăng ký học phần trùng lịch (SE302 sau SE301)', async ({ page }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 40,
+                            "line": 165
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected substring: \u001b[32m\"đủ sĩ số\"\u001b[39m\nReceived string:    \u001b[31m\"SQLSTATE[45000]: slot_exceeded (course_id=EN101)\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert err\">SQLSTATE[45000]: slot_exceeded (course_id=EN101)</div>\u001b[22m\n\u001b[2m      - unexpected value \"SQLSTATE[45000]: slot_exceeded (course_id=EN101)\"\u001b[22m\n\n\n  163 |     await login(page);\n  164 |     await register(page, 'EN101');\n> 165 |     await expect(page.locator('#msg')).toContainText('đủ sĩ số');\n      |                                        ^\n  166 |     await expect(page.locator('#msg')).not.toHaveText(TECH);\n  167 |   });\n  168 |   test('FET-05 Đăng ký học phần trùng lịch (SE302 sau SE301)', async ({ page }) => {\n    at /home/claude/unireg/tests/unireg.spec.js:165:40"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:58:57.421Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-04-Đăng-ký-lớp-đã-đầy-EN101-thông-báo-dễ-hiểu-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-04-Đăng-ký-lớp-đã-đầy-EN101-thông-báo-dễ-hiểu-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 40,
+                        "line": 165
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-34b20d0bbf2561a5c899",
+              "file": "unireg.spec.js",
+              "line": 162,
+              "column": 3
+            },
+            {
+              "title": "FET-05 Đăng ký học phần trùng lịch (SE302 sau SE301)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2520,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:05.423Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-a5542896ac3449b1d193",
+              "file": "unireg.spec.js",
+              "line": 168,
+              "column": 3
+            },
+            {
+              "title": "FET-06 Đăng ký lại học phần đã có (IT001) bị từ chối",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1423,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /home/claude/unireg/tests/unireg.spec.js:178:60",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 60,
+                          "line": 178
+                        },
+                        "snippet": "  176 |     await register(page, 'IT001');\n  177 |     const d = await registrations(page);\n> 178 |     expect(d.items.filter((x) => x.id === 'IT001').length).toBe(1);\n      |                                                            ^\n  179 |   });\n  180 |   test('FET-07 Nhấn đúp nút Đăng ký không tạo bản ghi trùng', async ({ page }) => {\n  181 |     await login(page);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 60,
+                            "line": 178
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n  176 |     await register(page, 'IT001');\n  177 |     const d = await registrations(page);\n> 178 |     expect(d.items.filter((x) => x.id === 'IT001').length).toBe(1);\n      |                                                            ^\n  179 |   });\n  180 |   test('FET-07 Nhấn đúp nút Đăng ký không tạo bản ghi trùng', async ({ page }) => {\n  181 |     await login(page);\n    at /home/claude/unireg/tests/unireg.spec.js:178:60"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:08.038Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-06-Đăng-ký--89517-phần-đã-có-IT001-bị-từ-chối-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-06-Đăng-ký--89517-phần-đã-có-IT001-bị-từ-chối-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 60,
+                        "line": 178
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-c3d5e2dc7d14514ee6f6",
+              "file": "unireg.spec.js",
+              "line": 174,
+              "column": 3
+            },
+            {
+              "title": "FET-07 Nhấn đúp nút Đăng ký không tạo bản ghi trùng",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2562,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /home/claude/unireg/tests/unireg.spec.js:185:60",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 60,
+                          "line": 185
+                        },
+                        "snippet": "  183 |     await page.waitForTimeout(2000);\n  184 |     const d = await registrations(page);\n> 185 |     expect(d.items.filter((x) => x.id === \"SE320\").length).toBe(1);\n      |                                                            ^\n  186 |   });\n  187 |   test('FET-08 Họ tên \"123456\" bị từ chối tại trường nhập', async ({ page }) => {\n  188 |     await login(page);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 60,
+                            "line": 185
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n  183 |     await page.waitForTimeout(2000);\n  184 |     const d = await registrations(page);\n> 185 |     expect(d.items.filter((x) => x.id === \"SE320\").length).toBe(1);\n      |                                                            ^\n  186 |   });\n  187 |   test('FET-08 Họ tên \"123456\" bị từ chối tại trường nhập', async ({ page }) => {\n  188 |     await login(page);\n    at /home/claude/unireg/tests/unireg.spec.js:185:60"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:10.360Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-07-Nhấn-đúp-7f7cf--ký-không-tạo-bản-ghi-trùng-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-07-Nhấn-đúp-7f7cf--ký-không-tạo-bản-ghi-trùng-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 60,
+                        "line": 185
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-9df958620dca1d739c99",
+              "file": "unireg.spec.js",
+              "line": 180,
+              "column": 3
+            },
+            {
+              "title": "FET-08 Họ tên \"123456\" bị từ chối tại trường nhập",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6360,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#name')\nExpected: \u001b[32m\"true\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#name')\u001b[22m\n\u001b[2m    9 × locator resolved to <input id=\"name\" name=\"name\" autocomplete=\"name\" placeholder=\"Họ tên\" aria-describedby=\"name-err\"/>\u001b[22m\n\u001b[2m      - unexpected value \"null\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#name')\nExpected: \u001b[32m\"true\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#name')\u001b[22m\n\u001b[2m    9 × locator resolved to <input id=\"name\" name=\"name\" autocomplete=\"name\" placeholder=\"Họ tên\" aria-describedby=\"name-err\"/>\u001b[22m\n\u001b[2m      - unexpected value \"null\"\u001b[22m\n\n    at /home/claude/unireg/tests/unireg.spec.js:193:41",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 41,
+                          "line": 193
+                        },
+                        "snippet": "  191 |     await page.click('#pf button[type=submit]');\n  192 |     await page.waitForTimeout(400);\n> 193 |     await expect(page.locator('#name')).toHaveAttribute('aria-invalid', 'true');\n      |                                         ^\n  194 |   });\n  195 |   test('FET-09 Số điện thoại 9 chữ số bị từ chối', async ({ page }) => {\n  196 |     await login(page);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 41,
+                            "line": 193
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#name')\nExpected: \u001b[32m\"true\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#name')\u001b[22m\n\u001b[2m    9 × locator resolved to <input id=\"name\" name=\"name\" autocomplete=\"name\" placeholder=\"Họ tên\" aria-describedby=\"name-err\"/>\u001b[22m\n\u001b[2m      - unexpected value \"null\"\u001b[22m\n\n\n  191 |     await page.click('#pf button[type=submit]');\n  192 |     await page.waitForTimeout(400);\n> 193 |     await expect(page.locator('#name')).toHaveAttribute('aria-invalid', 'true');\n      |                                         ^\n  194 |   });\n  195 |   test('FET-09 Số điện thoại 9 chữ số bị từ chối', async ({ page }) => {\n  196 |     await login(page);\n    at /home/claude/unireg/tests/unireg.spec.js:193:41"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:13.940Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-08-Họ-tên-123456-bị-từ-chối-tại-trường-nhập-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-08-Họ-tên-123456-bị-từ-chối-tại-trường-nhập-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 41,
+                        "line": 193
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-b30bc8f100367e43a057",
+              "file": "unireg.spec.js",
+              "line": 187,
+              "column": 3
+            },
+            {
+              "title": "FET-09 Số điện thoại 9 chữ số bị từ chối",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6369,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#phone')\nExpected: \u001b[32m\"true\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#phone')\u001b[22m\n\u001b[2m    9 × locator resolved to <input id=\"phone\" type=\"text\" name=\"phone\" placeholder=\"SĐT\" autocomplete=\"tel\" inputmode=\"numeric\" aria-describedby=\"phone-hint phone-err\"/>\u001b[22m\n\u001b[2m      - unexpected value \"null\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#phone')\nExpected: \u001b[32m\"true\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#phone')\u001b[22m\n\u001b[2m    9 × locator resolved to <input id=\"phone\" type=\"text\" name=\"phone\" placeholder=\"SĐT\" autocomplete=\"tel\" inputmode=\"numeric\" aria-describedby=\"phone-hint phone-err\"/>\u001b[22m\n\u001b[2m      - unexpected value \"null\"\u001b[22m\n\n    at /home/claude/unireg/tests/unireg.spec.js:201:42",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 42,
+                          "line": 201
+                        },
+                        "snippet": "  199 |     await page.click('#pf button[type=submit]');\n  200 |     await page.waitForTimeout(400);\n> 201 |     await expect(page.locator('#phone')).toHaveAttribute('aria-invalid', 'true');\n      |                                          ^\n  202 |   });\n  203 |   test('FET-10 Mất kết nối máy chủ khi đăng ký: có thông báo cho người dùng', async ({ page }) => {\n  204 |     await login(page);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 42,
+                            "line": 201
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#phone')\nExpected: \u001b[32m\"true\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#phone')\u001b[22m\n\u001b[2m    9 × locator resolved to <input id=\"phone\" type=\"text\" name=\"phone\" placeholder=\"SĐT\" autocomplete=\"tel\" inputmode=\"numeric\" aria-describedby=\"phone-hint phone-err\"/>\u001b[22m\n\u001b[2m      - unexpected value \"null\"\u001b[22m\n\n\n  199 |     await page.click('#pf button[type=submit]');\n  200 |     await page.waitForTimeout(400);\n> 201 |     await expect(page.locator('#phone')).toHaveAttribute('aria-invalid', 'true');\n      |                                          ^\n  202 |   });\n  203 |   test('FET-10 Mất kết nối máy chủ khi đăng ký: có thông báo cho người dùng', async ({ page }) => {\n  204 |     await login(page);\n    at /home/claude/unireg/tests/unireg.spec.js:201:42"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:21.334Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-09-Số-điện-thoại-9-chữ-số-bị-từ-chối-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-09-Số-điện-thoại-9-chữ-số-bị-từ-chối-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 42,
+                        "line": 201
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-f9f48a7efe5129a96533",
+              "file": "unireg.spec.js",
+              "line": 195,
+              "column": 3
+            },
+            {
+              "title": "FET-10 Mất kết nối máy chủ khi đăng ký: có thông báo cho người dùng",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6378,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected substring: \u001b[32m\"kết nối\"\u001b[39m\nReceived string:    \u001b[31m\"Failed to fetch\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert err\">Failed to fetch</div>\u001b[22m\n\u001b[2m      - unexpected value \"Failed to fetch\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected substring: \u001b[32m\"kết nối\"\u001b[39m\nReceived string:    \u001b[31m\"Failed to fetch\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert err\">Failed to fetch</div>\u001b[22m\n\u001b[2m      - unexpected value \"Failed to fetch\"\u001b[22m\n\n    at /home/claude/unireg/tests/unireg.spec.js:208:40",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 40,
+                          "line": 208
+                        },
+                        "snippet": "  206 |     await page.click('button[data-id=\"SE301\"]');\n  207 |     await page.waitForTimeout(800);\n> 208 |     await expect(page.locator('#msg')).toContainText('kết nối');\n      |                                        ^\n  209 |   });\n  210 |   test('FET-11 MSSV 9 chữ số (biên trên + 1): ô MSSV không nhận quá 8 chữ số', async ({ page }) => {\n  211 |     await page.goto('/index.html');"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 40,
+                            "line": 208
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#msg')\nExpected substring: \u001b[32m\"kết nối\"\u001b[39m\nReceived string:    \u001b[31m\"Failed to fetch\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#msg')\u001b[22m\n\u001b[2m    9 × locator resolved to <div id=\"msg\" class=\"alert err\">Failed to fetch</div>\u001b[22m\n\u001b[2m      - unexpected value \"Failed to fetch\"\u001b[22m\n\n\n  206 |     await page.click('button[data-id=\"SE301\"]');\n  207 |     await page.waitForTimeout(800);\n> 208 |     await expect(page.locator('#msg')).toContainText('kết nối');\n      |                                        ^\n  209 |   });\n  210 |   test('FET-11 MSSV 9 chữ số (biên trên + 1): ô MSSV không nhận quá 8 chữ số', async ({ page }) => {\n  211 |     await page.goto('/index.html');\n    at /home/claude/unireg/tests/unireg.spec.js:208:40"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:28.835Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-10-Mất-kết--7f71c-có-thông-báo-cho-người-dùng-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-10-Mất-kết--7f71c-có-thông-báo-cho-người-dùng-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 40,
+                        "line": 208
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-d0e19a7bfc84b9c254df",
+              "file": "unireg.spec.js",
+              "line": 203,
+              "column": 3
+            },
+            {
+              "title": "FET-11 MSSV 9 chữ số (biên trên + 1): ô MSSV không nhận quá 8 chữ số",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 320,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m8\u001b[39m\nReceived:    \u001b[31m9\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m8\u001b[39m\nReceived:    \u001b[31m9\u001b[39m\n    at /home/claude/unireg/tests/unireg.spec.js:213:53",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 53,
+                          "line": 213
+                        },
+                        "snippet": "  211 |     await page.goto('/index.html');\n  212 |     await page.fill('#mssv', '123456789');\n> 213 |     expect((await page.inputValue('#mssv')).length).toBeLessThanOrEqual(8);\n      |                                                     ^\n  214 |   });\n  215 | });\n  216 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 53,
+                            "line": 213
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m8\u001b[39m\nReceived:    \u001b[31m9\u001b[39m\n\n  211 |     await page.goto('/index.html');\n  212 |     await page.fill('#mssv', '123456789');\n> 213 |     expect((await page.inputValue('#mssv')).length).toBeLessThanOrEqual(8);\n      |                                                     ^\n  214 |   });\n  215 | });\n  216 |\n    at /home/claude/unireg/tests/unireg.spec.js:213:53"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:36.148Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-11-MSSV-9-c-10765-SSV-không-nhận-quá-8-chữ-số-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-FET-FET-11-MSSV-9-c-10765-SSV-không-nhận-quá-8-chữ-số-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 53,
+                        "line": 213
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-283178f19e99d8b96244",
+              "file": "unireg.spec.js",
+              "line": 210,
+              "column": 3
+            },
+            {
+              "title": "FET-01 Đăng nhập để trống: thông báo dễ hiểu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 247,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:14.540Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-16e3a74b0b5f7b3b21ff",
+              "file": "unireg.spec.js",
+              "line": 142,
+              "column": 3
+            },
+            {
+              "title": "FET-02 Sai mật khẩu: không lộ mã lỗi kỹ thuật",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 274,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:14.804Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-f4910375e5aacb1bbc6b",
+              "file": "unireg.spec.js",
+              "line": 149,
+              "column": 3
+            },
+            {
+              "title": "FET-03 MSSV 7 chữ số (biên dưới - 1): báo lỗi định dạng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 216,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:15.095Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-ad51002956e0e14ba96d",
+              "file": "unireg.spec.js",
+              "line": 156,
+              "column": 3
+            },
+            {
+              "title": "FET-04 Đăng ký lớp đã đầy (EN101): thông báo dễ hiểu",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1418,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:15.319Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-31a1902de27a493c62a1",
+              "file": "unireg.spec.js",
+              "line": 162,
+              "column": 3
+            },
+            {
+              "title": "FET-05 Đăng ký học phần trùng lịch (SE302 sau SE301)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2373,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:16.748Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-2c3b7cc26d66dbed29d3",
+              "file": "unireg.spec.js",
+              "line": 168,
+              "column": 3
+            },
+            {
+              "title": "FET-06 Đăng ký lại học phần đã có (IT001) bị từ chối",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1391,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:19.130Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-4ec1903396672bbdff43",
+              "file": "unireg.spec.js",
+              "line": 174,
+              "column": 3
+            },
+            {
+              "title": "FET-07 Nhấn đúp nút Đăng ký không tạo bản ghi trùng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2421,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:20.533Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-597052d6135a0b4ca933",
+              "file": "unireg.spec.js",
+              "line": 180,
+              "column": 3
+            },
+            {
+              "title": "FET-08 Họ tên \"123456\" bị từ chối tại trường nhập",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1262,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:22.967Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-cbcffc7c3588e5def561",
+              "file": "unireg.spec.js",
+              "line": 187,
+              "column": 3
+            },
+            {
+              "title": "FET-09 Số điện thoại 9 chữ số bị từ chối",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1282,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:24.247Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-18279427be457506734d",
+              "file": "unireg.spec.js",
+              "line": 195,
+              "column": 3
+            },
+            {
+              "title": "FET-10 Mất kết nối máy chủ khi đăng ký: có thông báo cho người dùng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1236,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:25.564Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-50eddb9eb12cbf929dec",
+              "file": "unireg.spec.js",
+              "line": 203,
+              "column": 3
+            },
+            {
+              "title": "FET-11 MSSV 9 chữ số (biên trên + 1): ô MSSV không nhận quá 8 chữ số",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 186,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:26.815Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-b102858805ba856a36c6",
+              "file": "unireg.spec.js",
+              "line": 210,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "BVA",
+          "file": "unireg.spec.js",
+          "line": 218,
+          "column": 6,
+          "specs": [
+            {
+              "title": "BVA-01 22 TC + 3 TC = 25 (đúng biên): chấp nhận",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1471,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:37.326Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-d981232b4872d4aba3e7",
+              "file": "unireg.spec.js",
+              "line": 222,
+              "column": 3
+            },
+            {
+              "title": "BVA-02 23 TC + 3 TC = 26 (biên + 1): từ chối",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1473,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m23\u001b[39m\nReceived: \u001b[31m26\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m23\u001b[39m\nReceived: \u001b[31m26\u001b[39m\n    at /home/claude/unireg/tests/unireg.spec.js:230:47",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 47,
+                          "line": 230
+                        },
+                        "snippet": "  228 |     await reset(page, R23); await login(page);\n  229 |     await register(page, 'SE320');\n> 230 |     expect((await registrations(page)).total).toBe(23);\n      |                                               ^\n  231 |     await expect(page.locator('#msg')).toContainText('Vượt quá');\n  232 |   });\n  233 |   test('BVA-03 25 TC + 2 TC = 27 (đã ở biên): từ chối', async ({ page }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 47,
+                            "line": 230
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m23\u001b[39m\nReceived: \u001b[31m26\u001b[39m\n\n  228 |     await reset(page, R23); await login(page);\n  229 |     await register(page, 'SE320');\n> 230 |     expect((await registrations(page)).total).toBe(23);\n      |                                               ^\n  231 |     await expect(page.locator('#msg')).toContainText('Vượt quá');\n  232 |   });\n  233 |   test('BVA-03 25 TC + 2 TC = 27 (đã ở biên): từ chối', async ({ page }) => {\n    at /home/claude/unireg/tests/unireg.spec.js:230:47"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:38.928Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-BVA-BVA-02-23-TC-3-TC-26-biên-1-từ-chối-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-BVA-BVA-02-23-TC-3-TC-26-biên-1-từ-chối-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 47,
+                        "line": 230
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-d9a53b18ec6514197c9d",
+              "file": "unireg.spec.js",
+              "line": 227,
+              "column": 3
+            },
+            {
+              "title": "BVA-03 25 TC + 2 TC = 27 (đã ở biên): từ chối",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1520,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m25\u001b[39m\nReceived: \u001b[31m27\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m25\u001b[39m\nReceived: \u001b[31m27\u001b[39m\n    at /home/claude/unireg/tests/unireg.spec.js:236:47",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 47,
+                          "line": 236
+                        },
+                        "snippet": "  234 |     await reset(page, R25); await login(page);\n  235 |     await register(page, 'PE001');\n> 236 |     expect((await registrations(page)).total).toBe(25);\n      |                                               ^\n  237 |   });\n  238 |   test('BVA-04 22 TC + 2 TC = 24 (biên − 1): chấp nhận', async ({ page }) => {\n  239 |     await reset(page, R22); await login(page);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 47,
+                            "line": 236
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m25\u001b[39m\nReceived: \u001b[31m27\u001b[39m\n\n  234 |     await reset(page, R25); await login(page);\n  235 |     await register(page, 'PE001');\n> 236 |     expect((await registrations(page)).total).toBe(25);\n      |                                               ^\n  237 |   });\n  238 |   test('BVA-04 22 TC + 2 TC = 24 (biên − 1): chấp nhận', async ({ page }) => {\n  239 |     await reset(page, R22); await login(page);\n    at /home/claude/unireg/tests/unireg.spec.js:236:47"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:41.193Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-BVA-BVA-03-25-TC-2-TC-27-đã-ở-biên-từ-chối-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-BVA-BVA-03-25-TC-2-TC-27-đã-ở-biên-từ-chối-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 47,
+                        "line": 236
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-7c990337dd39338b0223",
+              "file": "unireg.spec.js",
+              "line": 233,
+              "column": 3
+            },
+            {
+              "title": "BVA-04 22 TC + 2 TC = 24 (biên − 1): chấp nhận",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1512,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:43.594Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-eaf288be403772f2d9ef",
+              "file": "unireg.spec.js",
+              "line": 238,
+              "column": 3
+            },
+            {
+              "title": "BVA-01 22 TC + 3 TC = 25 (đúng biên): chấp nhận",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1340,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:27.012Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-22095d95771ccc030463",
+              "file": "unireg.spec.js",
+              "line": 222,
+              "column": 3
+            },
+            {
+              "title": "BVA-02 23 TC + 3 TC = 26 (biên + 1): từ chối",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1374,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:28.362Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-a878898ff15baea8c1b4",
+              "file": "unireg.spec.js",
+              "line": 227,
+              "column": 3
+            },
+            {
+              "title": "BVA-03 25 TC + 2 TC = 27 (đã ở biên): từ chối",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1353,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:29.752Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-325c5779726b880d2217",
+              "file": "unireg.spec.js",
+              "line": 233,
+              "column": 3
+            },
+            {
+              "title": "BVA-04 22 TC + 2 TC = 24 (biên − 1): chấp nhận",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1413,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:31.119Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-782ff90f6d608f1caa36",
+              "file": "unireg.spec.js",
+              "line": 238,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "A11Y",
+          "file": "unireg.spec.js",
+          "line": 246,
+          "column": 6,
+          "specs": [
+            {
+              "title": "A11Y-01 Khai báo ngôn ngữ trang (WCAG 3.1.1)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5194,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('html')\nExpected: \u001b[32m\"vi\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('html')\u001b[22m\n\u001b[2m    9 × locator resolved to <html>…</html>\u001b[22m\n\u001b[2m      - unexpected value \"null\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('html')\nExpected: \u001b[32m\"vi\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('html')\u001b[22m\n\u001b[2m    9 × locator resolved to <html>…</html>\u001b[22m\n\u001b[2m      - unexpected value \"null\"\u001b[22m\n\n    at /home/claude/unireg/tests/unireg.spec.js:249:40",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 40,
+                          "line": 249
+                        },
+                        "snippet": "  247 |   test('A11Y-01 Khai báo ngôn ngữ trang (WCAG 3.1.1)', async ({ page }) => {\n  248 |     await page.goto('/index.html');\n> 249 |     await expect(page.locator('html')).toHaveAttribute('lang', 'vi');\n      |                                        ^\n  250 |   });\n  251 |   test('A11Y-02 Mọi ô nhập đều có nhãn (WCAG 1.3.1, 3.3.2)', async ({ page }) => {\n  252 |     await login(page);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 40,
+                            "line": 249
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('html')\nExpected: \u001b[32m\"vi\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('html')\u001b[22m\n\u001b[2m    9 × locator resolved to <html>…</html>\u001b[22m\n\u001b[2m      - unexpected value \"null\"\u001b[22m\n\n\n  247 |   test('A11Y-01 Khai báo ngôn ngữ trang (WCAG 3.1.1)', async ({ page }) => {\n  248 |     await page.goto('/index.html');\n> 249 |     await expect(page.locator('html')).toHaveAttribute('lang', 'vi');\n      |                                        ^\n  250 |   });\n  251 |   test('A11Y-02 Mọi ô nhập đều có nhãn (WCAG 1.3.1, 3.3.2)', async ({ page }) => {\n  252 |     await login(page);\n    at /home/claude/unireg/tests/unireg.spec.js:249:40"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:45.208Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-A11Y-A11Y-01-Khai-báo-ngôn-ngữ-trang-WCAG-3-1-1--v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-A11Y-A11Y-01-Khai-báo-ngôn-ngữ-trang-WCAG-3-1-1--v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 40,
+                        "line": 249
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-1b92c10d6d951842ef0a",
+              "file": "unireg.spec.js",
+              "line": 247,
+              "column": 3
+            },
+            {
+              "title": "A11Y-02 Mọi ô nhập đều có nhãn (WCAG 1.3.1, 3.3.2)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 915,
+                      "error": {
+                        "message": "Error: Ô nhập không có nhãn: #name, #email, #phone, #dob\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"#name\",\u001b[39m\n\u001b[31m+   \"#email\",\u001b[39m\n\u001b[31m+   \"#phone\",\u001b[39m\n\u001b[31m+   \"#dob\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: Ô nhập không có nhãn: #name, #email, #phone, #dob\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"#name\",\u001b[39m\n\u001b[31m+   \"#email\",\u001b[39m\n\u001b[31m+   \"#phone\",\u001b[39m\n\u001b[31m+   \"#dob\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /home/claude/unireg/tests/unireg.spec.js:255:72",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 72,
+                          "line": 255
+                        },
+                        "snippet": "  253 |     await page.goto('/profile.html'); await page.waitForTimeout(400);\n  254 |     const unlabeled = await page.$$eval('input, select', (els) => els.filter((e) => !(e.labels && e.labels.length) && !e.getAttribute('aria-label')).map((e) => '#' + e.id));\n> 255 |     expect(unlabeled, 'Ô nhập không có nhãn: ' + unlabeled.join(', ')).toEqual([]);\n      |                                                                        ^\n  256 |   });\n  257 |   test('A11Y-03 Hủy đăng ký chỉ bằng bàn phím (WCAG 2.1.1)', async ({ page }) => {\n  258 |     await login(page);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 72,
+                            "line": 255
+                          },
+                          "message": "Error: Ô nhập không có nhãn: #name, #email, #phone, #dob\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 6\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"#name\",\u001b[39m\n\u001b[31m+   \"#email\",\u001b[39m\n\u001b[31m+   \"#phone\",\u001b[39m\n\u001b[31m+   \"#dob\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  253 |     await page.goto('/profile.html'); await page.waitForTimeout(400);\n  254 |     const unlabeled = await page.$$eval('input, select', (els) => els.filter((e) => !(e.labels && e.labels.length) && !e.getAttribute('aria-label')).map((e) => '#' + e.id));\n> 255 |     expect(unlabeled, 'Ô nhập không có nhãn: ' + unlabeled.join(', ')).toEqual([]);\n      |                                                                        ^\n  256 |   });\n  257 |   test('A11Y-03 Hủy đăng ký chỉ bằng bàn phím (WCAG 2.1.1)', async ({ page }) => {\n  258 |     await login(page);\n    at /home/claude/unireg/tests/unireg.spec.js:255:72"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:51.286Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-A11Y-A11Y-02-Mọi-ô-nhập-đều-có-nhãn-WCAG-1-3-1-3-3-2--v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-A11Y-A11Y-02-Mọi-ô-nhập-đều-có-nhãn-WCAG-1-3-1-3-3-2--v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 72,
+                        "line": 255
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-9481f43ef0f745912518",
+              "file": "unireg.spec.js",
+              "line": 251,
+              "column": 3
+            },
+            {
+              "title": "A11Y-03 Hủy đăng ký chỉ bằng bàn phím (WCAG 2.1.1)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 729,
+                      "error": {
+                        "message": "Error: Không thể dùng phím Tab để tới nút hủy\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: Không thể dùng phím Tab để tới nút hủy\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/claude/unireg/tests/unireg.spec.js:265:63",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 63,
+                          "line": 265
+                        },
+                        "snippet": "  263 |       reached = await page.evaluate(() => !!document.activeElement && document.activeElement.hasAttribute('data-rid'));\n  264 |     }\n> 265 |     expect(reached, 'Không thể dùng phím Tab để tới nút hủy').toBe(true);\n      |                                                               ^\n  266 |   });\n  267 |   test('A11Y-04 Có chỉ báo focus khi dùng bàn phím (WCAG 2.4.7)', async ({ page }) => {\n  268 |     await page.goto('/index.html');"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 63,
+                            "line": 265
+                          },
+                          "message": "Error: Không thể dùng phím Tab để tới nút hủy\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  263 |       reached = await page.evaluate(() => !!document.activeElement && document.activeElement.hasAttribute('data-rid'));\n  264 |     }\n> 265 |     expect(reached, 'Không thể dùng phím Tab để tới nút hủy').toBe(true);\n      |                                                               ^\n  266 |   });\n  267 |   test('A11Y-04 Có chỉ báo focus khi dùng bàn phím (WCAG 2.4.7)', async ({ page }) => {\n  268 |     await page.goto('/index.html');\n    at /home/claude/unireg/tests/unireg.spec.js:265:63"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:53.136Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-A11Y-A11Y-03-Hủy-đă-7f922-ỉ-bằng-bàn-phím-WCAG-2-1-1--v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-A11Y-A11Y-03-Hủy-đă-7f922-ỉ-bằng-bàn-phím-WCAG-2-1-1--v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 63,
+                        "line": 265
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-b92a941fd474381f9c09",
+              "file": "unireg.spec.js",
+              "line": 257,
+              "column": 3
+            },
+            {
+              "title": "A11Y-04 Có chỉ báo focus khi dùng bàn phím (WCAG 2.4.7)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 276,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: not \u001b[32m/^none|0px$/\u001b[39m\nReceived string:      \u001b[31m\"\u001b[7mnone\u001b[27m 0px\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: not \u001b[32m/^none|0px$/\u001b[39m\nReceived string:      \u001b[31m\"\u001b[7mnone\u001b[27m 0px\"\u001b[39m\n    at /home/claude/unireg/tests/unireg.spec.js:271:23",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 23,
+                          "line": 271
+                        },
+                        "snippet": "  269 |     await page.keyboard.press('Tab');\n  270 |     const style = await page.evaluate(() => { const s = getComputedStyle(document.activeElement); return s.outlineStyle + ' ' + s.outlineWidth; });\n> 271 |     expect(style).not.toMatch(/^none|0px$/);\n      |                       ^\n  272 |   });\n  273 |   test('A11Y-05 Không cuộn ngang ở chiều rộng 320px (WCAG 1.4.10)', async ({ page }) => {\n  274 |     await page.setViewportSize({ width: 320, height: 640 });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 23,
+                            "line": 271
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: not \u001b[32m/^none|0px$/\u001b[39m\nReceived string:      \u001b[31m\"\u001b[7mnone\u001b[27m 0px\"\u001b[39m\n\n  269 |     await page.keyboard.press('Tab');\n  270 |     const style = await page.evaluate(() => { const s = getComputedStyle(document.activeElement); return s.outlineStyle + ' ' + s.outlineWidth; });\n> 271 |     expect(style).not.toMatch(/^none|0px$/);\n      |                       ^\n  272 |   });\n  273 |   test('A11Y-05 Không cuộn ngang ở chiều rộng 320px (WCAG 1.4.10)', async ({ page }) => {\n  274 |     await page.setViewportSize({ width: 320, height: 640 });\n    at /home/claude/unireg/tests/unireg.spec.js:271:23"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:55.040Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-A11Y-A11Y-04-Có-chỉ-3fc3c-i-dùng-bàn-phím-WCAG-2-4-7--v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-A11Y-A11Y-04-Có-chỉ-3fc3c-i-dùng-bàn-phím-WCAG-2-4-7--v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 23,
+                        "line": 271
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-9285a918f9bd159a3446",
+              "file": "unireg.spec.js",
+              "line": 267,
+              "column": 3
+            },
+            {
+              "title": "A11Y-05 Không cuộn ngang ở chiều rộng 320px (WCAG 1.4.10)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 428,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m320\u001b[39m\nReceived:    \u001b[31m1016\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m320\u001b[39m\nReceived:    \u001b[31m1016\u001b[39m\n    at /home/claude/unireg/tests/unireg.spec.js:277:16",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 16,
+                          "line": 277
+                        },
+                        "snippet": "  275 |     await login(page);\n  276 |     const sw = await page.evaluate(() => document.documentElement.scrollWidth);\n> 277 |     expect(sw).toBeLessThanOrEqual(320);\n      |                ^\n  278 |   });\n  279 |   test('A11Y-06 axe-core: không có vi phạm WCAG 2.x mức A/AA', async ({ page }) => {\n  280 |     await login(page);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 16,
+                            "line": 277
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m320\u001b[39m\nReceived:    \u001b[31m1016\u001b[39m\n\n  275 |     await login(page);\n  276 |     const sw = await page.evaluate(() => document.documentElement.scrollWidth);\n> 277 |     expect(sw).toBeLessThanOrEqual(320);\n      |                ^\n  278 |   });\n  279 |   test('A11Y-06 axe-core: không có vi phạm WCAG 2.x mức A/AA', async ({ page }) => {\n  280 |     await login(page);\n    at /home/claude/unireg/tests/unireg.spec.js:277:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:56.361Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-A11Y-A11Y-05-Không--09911-iều-rộng-320px-WCAG-1-4-10--v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-A11Y-A11Y-05-Không--09911-iều-rộng-320px-WCAG-1-4-10--v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 16,
+                        "line": 277
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-08b6fd32565e14ca7154",
+              "file": "unireg.spec.js",
+              "line": 273,
+              "column": 3
+            },
+            {
+              "title": "A11Y-06 axe-core: không có vi phạm WCAG 2.x mức A/AA",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.0",
+                  "projectName": "v1.0",
+                  "results": [
+                    {
+                      "workerIndex": 23,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 4945,
+                      "error": {
+                        "message": "Error: index.html: color-contrast (6)\nindex.html: html-has-lang (1)\nindex.html: image-alt (1)\ncourses.html: color-contrast (23)\ncourses.html: html-has-lang (1)\ncourses.html: image-alt (1)\ncourses.html: select-name (1)\nmy.html: color-contrast (14)\nmy.html: html-has-lang (1)\nmy.html: image-alt (1)\nprofile.html: color-contrast (10)\nprofile.html: html-has-lang (1)\nprofile.html: image-alt (1)\nprofile.html: label (1)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 16\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"index.html: color-contrast (6)\",\u001b[39m\n\u001b[31m+   \"index.html: html-has-lang (1)\",\u001b[39m\n\u001b[31m+   \"index.html: image-alt (1)\",\u001b[39m\n\u001b[31m+   \"courses.html: color-contrast (23)\",\u001b[39m\n\u001b[31m+   \"courses.html: html-has-lang (1)\",\u001b[39m\n\u001b[31m+   \"courses.html: image-alt (1)\",\u001b[39m\n\u001b[31m+   \"courses.html: select-name (1)\",\u001b[39m\n\u001b[31m+   \"my.html: color-contrast (14)\",\u001b[39m\n\u001b[31m+   \"my.html: html-has-lang (1)\",\u001b[39m\n\u001b[31m+   \"my.html: image-alt (1)\",\u001b[39m\n\u001b[31m+   \"profile.html: color-contrast (10)\",\u001b[39m\n\u001b[31m+   \"profile.html: html-has-lang (1)\",\u001b[39m\n\u001b[31m+   \"profile.html: image-alt (1)\",\u001b[39m\n\u001b[31m+   \"profile.html: label (1)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                        "stack": "Error: index.html: color-contrast (6)\nindex.html: html-has-lang (1)\nindex.html: image-alt (1)\ncourses.html: color-contrast (23)\ncourses.html: html-has-lang (1)\ncourses.html: image-alt (1)\ncourses.html: select-name (1)\nmy.html: color-contrast (14)\nmy.html: html-has-lang (1)\nmy.html: image-alt (1)\nprofile.html: color-contrast (10)\nprofile.html: html-has-lang (1)\nprofile.html: image-alt (1)\nprofile.html: label (1)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 16\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"index.html: color-contrast (6)\",\u001b[39m\n\u001b[31m+   \"index.html: html-has-lang (1)\",\u001b[39m\n\u001b[31m+   \"index.html: image-alt (1)\",\u001b[39m\n\u001b[31m+   \"courses.html: color-contrast (23)\",\u001b[39m\n\u001b[31m+   \"courses.html: html-has-lang (1)\",\u001b[39m\n\u001b[31m+   \"courses.html: image-alt (1)\",\u001b[39m\n\u001b[31m+   \"courses.html: select-name (1)\",\u001b[39m\n\u001b[31m+   \"my.html: color-contrast (14)\",\u001b[39m\n\u001b[31m+   \"my.html: html-has-lang (1)\",\u001b[39m\n\u001b[31m+   \"my.html: image-alt (1)\",\u001b[39m\n\u001b[31m+   \"profile.html: color-contrast (10)\",\u001b[39m\n\u001b[31m+   \"profile.html: html-has-lang (1)\",\u001b[39m\n\u001b[31m+   \"profile.html: image-alt (1)\",\u001b[39m\n\u001b[31m+   \"profile.html: label (1)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /home/claude/unireg/tests/unireg.spec.js:289:33",
+                        "location": {
+                          "file": "/home/claude/unireg/tests/unireg.spec.js",
+                          "column": 33,
+                          "line": 289
+                        },
+                        "snippet": "  287 |       if (p === 'index.html') { await login(page); }\n  288 |     }\n> 289 |     expect(all, all.join('\\n')).toEqual([]);\n      |                                 ^\n  290 |   });\n  291 | });\n  292 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/claude/unireg/tests/unireg.spec.js",
+                            "column": 33,
+                            "line": 289
+                          },
+                          "message": "Error: index.html: color-contrast (6)\nindex.html: html-has-lang (1)\nindex.html: image-alt (1)\ncourses.html: color-contrast (23)\ncourses.html: html-has-lang (1)\ncourses.html: image-alt (1)\ncourses.html: select-name (1)\nmy.html: color-contrast (14)\nmy.html: html-has-lang (1)\nmy.html: image-alt (1)\nprofile.html: color-contrast (10)\nprofile.html: html-has-lang (1)\nprofile.html: image-alt (1)\nprofile.html: label (1)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 16\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"index.html: color-contrast (6)\",\u001b[39m\n\u001b[31m+   \"index.html: html-has-lang (1)\",\u001b[39m\n\u001b[31m+   \"index.html: image-alt (1)\",\u001b[39m\n\u001b[31m+   \"courses.html: color-contrast (23)\",\u001b[39m\n\u001b[31m+   \"courses.html: html-has-lang (1)\",\u001b[39m\n\u001b[31m+   \"courses.html: image-alt (1)\",\u001b[39m\n\u001b[31m+   \"courses.html: select-name (1)\",\u001b[39m\n\u001b[31m+   \"my.html: color-contrast (14)\",\u001b[39m\n\u001b[31m+   \"my.html: html-has-lang (1)\",\u001b[39m\n\u001b[31m+   \"my.html: image-alt (1)\",\u001b[39m\n\u001b[31m+   \"profile.html: color-contrast (10)\",\u001b[39m\n\u001b[31m+   \"profile.html: html-has-lang (1)\",\u001b[39m\n\u001b[31m+   \"profile.html: image-alt (1)\",\u001b[39m\n\u001b[31m+   \"profile.html: label (1)\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  287 |       if (p === 'index.html') { await login(page); }\n  288 |     }\n> 289 |     expect(all, all.join('\\n')).toEqual([]);\n      |                                 ^\n  290 |   });\n  291 | });\n  292 |\n    at /home/claude/unireg/tests/unireg.spec.js:289:33"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T19:59:57.916Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/claude/unireg/test-results/unireg-A11Y-A11Y-06-axe-co-b717f-ó-vi-phạm-WCAG-2-x-mức-A-AA-v1-0/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/claude/unireg/test-results/unireg-A11Y-A11Y-06-axe-co-b717f-ó-vi-phạm-WCAG-2-x-mức-A-AA-v1-0/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/claude/unireg/tests/unireg.spec.js",
+                        "column": 33,
+                        "line": 289
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-e1f025002802b8a91e44",
+              "file": "unireg.spec.js",
+              "line": 279,
+              "column": 3
+            },
+            {
+              "title": "A11Y-01 Khai báo ngôn ngữ trang (WCAG 3.1.1)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 173,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:32.545Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-f4530e4d556d8b053c5b",
+              "file": "unireg.spec.js",
+              "line": 247,
+              "column": 3
+            },
+            {
+              "title": "A11Y-02 Mọi ô nhập đều có nhãn (WCAG 1.3.1, 3.3.2)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 817,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:32.729Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-7119a5be178a345f65c2",
+              "file": "unireg.spec.js",
+              "line": 251,
+              "column": 3
+            },
+            {
+              "title": "A11Y-03 Hủy đăng ký chỉ bằng bàn phím (WCAG 2.1.1)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 405,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:33.561Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-7eb6fe13c4a73f0fe51b",
+              "file": "unireg.spec.js",
+              "line": 257,
+              "column": 3
+            },
+            {
+              "title": "A11Y-04 Có chỉ báo focus khi dùng bàn phím (WCAG 2.4.7)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 154,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:33.994Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-fdb86fcebe8cdfefd035",
+              "file": "unireg.spec.js",
+              "line": 267,
+              "column": 3
+            },
+            {
+              "title": "A11Y-05 Không cuộn ngang ở chiều rộng 320px (WCAG 1.4.10)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 335,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:34.161Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-7be7509642c82cdc351c",
+              "file": "unireg.spec.js",
+              "line": 273,
+              "column": 3
+            },
+            {
+              "title": "A11Y-06 axe-core: không có vi phạm WCAG 2.x mức A/AA",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "v1.1",
+                  "projectName": "v1.1",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4752,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T20:00:34.510Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c4777981f95c989c016-04fd72a0352c3c27ee56",
+              "file": "unireg.spec.js",
+              "line": 279,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-17T19:58:10.695Z",
+    "duration": 148678.13199999998,
+    "expected": 46,
+    "skipped": 0,
+    "unexpected": 24,
+    "flaky": 0
+  }
+}
